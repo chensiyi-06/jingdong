@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.div1{
+				width: 100%;
+				height: 50rem;
+				background-color: red;
+				display: flex;
+			}
+			.div11{
+				width: 61rem;
+				margin: 0 auto;
+			}
+			.div2{
+				width: 100%;
+				height: 5rem;
+				color: white;
+				font-size: 1.0rem;
+				margin: 0 auto;
+				line-height: 50px;
+				
+			}
+			.div2 img{
+				width: 10rem;
+				float: left;
+				margin: 1.5rem ;
+			}
+			p:nth-child(1n){
+				border-radius: 50rem;
+				text-align: center;
+				float: left;
+				flex: 1 1 auto;
+				margin: 1rem .5rem;
+			}
+			p:nth-child(9){
+				width: 11rem;
+				height: 3rem;
+				border-radius: 50rem;
+				background-color: black;
+				text-align: center;
+			}
+			.div3{
+				width: 50rem;
+				height: 8.5rem;
+				background-image: url(https://lai.jd.com/img/lai.074b353e.png);
+				background-size: 50rem;
+				margin: 0 auto;
+			}
+			.div3 img:nth-child(1){
+				position: relative;
+				width: 20rem;
+				margin: -4rem 35%;
+			}
+			.div3 img:nth-child(2){
+				position: relative;
+				left: 37rem;
+				top: -13rem;
+				width: 6rem;
+				animation: oneAn 500ms infinite linear;
+			}
+			@keyframes oneAn{
+				0%{width: 6rem;}
+				30%{width: 7rem;}
+				100%{width: 6rem;}
+			}
+			.div4{
+				width: 100%;
+				height: 20rem;
+				position: relative;
+				background-color: rgba(0, 0, 0, 0.8);
+				border-radius: 1rem;
+			}
+			.jdt{
+				width: 40rem;
+				height: 18.5rem;
+				overflow: hidden;
+				position: relative;
+				left: 0.9rem;
+				top: 0.7rem;
+			}
+			.jdtc{
+				width: 200rem;
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				animation: jdt 10s infinite linear ;
+			}
+			@keyframes jdt{
+				0%{left: 0;}
+				15%{left: 0;}
+				20%{left: -40rem;}
+				35%{left: -40rem;}
+				40%{left: -80rem;}
+				55%{left: -80rem;}
+				60%{left: -120rem;}
+				75%{left: -120rem;}
+				80%{left: -160rem;}
+				100%{left: -160rem;}
+			}
+			.jdtc img{
+				width: 40rem;
+				height: 18.5rem;
+				float: left;
+			}
+			ul li{
+				list-style-type: none;
+				color: white;
+			}
+			.div5{
+				position: relative;
+				left: 42rem;
+				top: -16rem;
+				width: 18rem;
+				line-height: 2.6rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+		<div class="div11">
+			<div class="div2">
+				<img src="data:image/png;base64,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" alt="">
+				<p>京东咨询</p>
+				<p>欢迎入驻</p>
+				<p>商家服务</p>
+				<p>商家故事</p>
+				<p>京东简介</p>
+				<p>发展历程</p>
+				<p>帮助中心</p>
+				<p style="float: right;">京东招商白皮书</p>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="div3">
+				<img src="https://lai.jd.com/img/joy.a15c6367.png" alt="">
+				<img src="https://lai.jd.com/img/heart.619dcb8c.png" alt="">
+			</div>
+			<div class="div4">
+				
+				<div class="jdt">
+					<div class="jdtc">
+						<img src="https://storage.360buyimg.com/imgtools/d98f57bcee-c53f67e0-0be4-11ee-a369-6bb53a4849ae.jpeg" alt="">
+						<img src="https://storage.360buyimg.com/imgtools/2d074bc468-f6906dc0-cfa4-11ed-b3db-7f20d4d9a150.jpeg" alt="">
+						<img src="https://img10.360buyimg.com/babel/s1980x808_jfs/t1/166006/22/13005/201906/6052c048E1ac7fce9/ade869d4a0dfbdfc.jpg!cc_1980x808.webp" alt="">
+						<img src="https://img12.360buyimg.com/imagetools/jfs/t1/50575/14/25307/38670/64ec50daF4f15bb54/027f9bc438b26bba.jpg" alt="">
+						<img src="https://storage.360buyimg.com/imgtools/d98f57bcee-c53f67e0-0be4-11ee-a369-6bb53a4849ae.jpeg" alt="">
+					</div>
+				</div>
+				<div class="div5">
+					<span style="font-size: 1.5rem;color: white;">资讯新闻</span>  <span style="float: right;color: white;">更多></span>
+					<ul>
+						<li><span>京东“春晓计划”全面升...</span><span style="float: right;">2023-08-28</span></li>
+						
+						<li><span>关于假冒京东名义开展线...</span><span style="float: right;">2023-08-28</span></li>
+						
+						<li><span>2023年京东拎包入住项目...</span><span style="float: right;">2023-08-28</span></li>
+						
+						<li><span>京东集团供应商行为准则...</span><span style="float: right;">2023-08-28</span></li>
+						
+						<li><span>京东喊你来开店，0元开...</span><span style="float: right;">2023-08-28</span></li>
+					</ul>
+					</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
